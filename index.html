@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8" />
+		<title>matplan</title>
+		<style>
+			html {
+				width: 100%;
+				height: 100%;
+				background-color: #eee;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="sparaprodukt">
+
+			<input id="produktnamn" type="text" placeholder="produktnamn" />
+			<input id="produktstorlek" type="text" placeholder="produktstorlek" />			
+			<select id="produktenhet">
+				<option value="styck">Styck</option>
+				<option value="gram">Gram</option>
+			</select>
+			<select id="produktkategori">
+				<option value="kott">Kött</option>
+				<option value="gronsak">Grönsak</option>
+			</select>
+			<input id="produktpris" type="text" placeholder="produktpris" />
+			<button id="spara">Spara</button>
+
+		</div>
+
+		<div id="produkter">
+
+		</div>
+
+		<script>
+			sparaprodukt.addEventListener("click",sparaProdukt, false);
+
+			function sparaProdukt() {
+				console.log ('produkt sparad');
+			}
+
+		</script>
+	</body>
+</html>
